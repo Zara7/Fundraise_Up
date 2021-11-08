@@ -1,0 +1,100 @@
+@mixin border-radius-top {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+@mixin border-radius-bottom {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top: 1px solid #DBDCDE;
+}
+
+@mixin card {
+    border-radius: 0.5rem;
+    border: 1px solid rgba(219, 220, 222, 1);
+    box-shadow: 1px 3px 3px 0px rgba(62, 63, 64, 0.1);
+}
+
+@mixin input-reset {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+@mixin select-reset {
+    border: none;
+    background: transparent;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+@mixin main-font-style {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+@mixin arrow_down {
+    border: solid #2F2F30;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg) translate(0, -50%);
+    -webkit-transform: rotate(45deg) translate(0, -50%);
+}
+@mixin  verticaly-centered {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+@mixin selectBox-style {
+    border: 1px solid #A9ABAE;
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+}
+@mixin checkbox_container {
+    width: 1.5rem;
+    display: block;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right: 0.75rem;
+    cursor: pointer;
+}
+@mixin hidden_input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+@mixin  centered_element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin slider_thumb {
+    width: 1.18rem;
+    height: 1.18rem;
+    background: #2eb670;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+@mixin checkmar_sign {
+    position: absolute;
+    display: none;
+    left: 0.43rem;
+    top: 0.15rem;
+    width: 0.56rem;
+    height: 0.81rem;
+    border: solid $base-color2;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
